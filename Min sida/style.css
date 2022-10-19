@@ -18,18 +18,23 @@ body{
     color: white;
 }
 
+.AC{
+    width: 120%;
+}
+
 img, li{
     list-style-type:none;
     text-align:left;
     width: 70%;
 }
 
-#side2 .wrapper{
-    grid-template-columns:1fr
+#sida2 .wrapper{
+    grid-template-columns:1fr;
     grid-template-areas:
     "header"
     "nav"
     "main"
+    "aside"
     "footer";
 }
 
@@ -44,6 +49,11 @@ nav{
 main{
     grid-area: main;
     padding: 0 10px 0 10px;
+}
+
+#sida2 aside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 footer{
