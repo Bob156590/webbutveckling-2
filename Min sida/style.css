@@ -34,9 +34,12 @@ img, li{
     "aside"
     "footer";
 }
-
+div{
+    margin: 0 auto;
+}
 #sida3 .wrapper{
     grid-template-columns:1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
     "header"
     "nav"
@@ -121,5 +124,8 @@ table, th, td{
 }
 
 tr:nth-child(even){
-    background-color: ;
+    background-color: tan ;
+}
+tr:nth-child(odd){
+    background-color: beige ;
 }
