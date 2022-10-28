@@ -1,28 +1,31 @@
 body{
-    background-color: gray;
+    background-color: gray;/*den ställer in bakgrundsfärgen för ett element*/
+    font-size: 20;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .wrapper{
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns:1fr ;
-    grid-template-rows:50px auto auto auto 50px;
-    grid-gap: 20px;
-    grid-template-areas:
+    width: 90%;/*den ställer in bredden på ett element*/
+    margin: 0 auto;/*den ställer in marginalerna för ett element*/
+    display: grid;/*den anger visningsbeteendet (typen av renderingsruta) för ett element. Nu gör det till et grid.*/
+    grid-template-columns:1fr ;/*den anger antalet kolumner i en rutnätslayout*/
+    grid-template-rows:50px auto auto auto 50px;/*den anger antalet rader i en rutnätslayout*/
+    grid-gap: 20px;/*den definierar storleken på gapet mellan rader och kolumner i en rutnätslayout*/
+    grid-template-areas:/*den specificerar områden inom rutnätslayouten t.ex var header eller nav ligger i griden*/
     "header"
     "nav"
     "main"
     "aside"
     "footer";
     background-color: gray;
-    color: wheat;
+    color: wheat;/*den anger färgen på texten*/
 }
 
 
-img, li{
-    list-style-type:none;
-    text-align:left;
+
+img, li{/*kommatecken=och*/
+    list-style-type:none;/*den anger typen av listobjektsmarkör i en lista*/
+    text-align:left;/*den anger den horisontella justeringen av text i ett element t.ex vänster,höger eller i centrum*/
     width: 70%;
 }
 
@@ -49,7 +52,7 @@ div{
 }
 
 header{
-    grid-area: header;
+    grid-area: header;/*den anger en rutnätsobjektstorlek och plats i en rutnätslayout*/
 }
 
 nav{
@@ -58,7 +61,7 @@ nav{
 
 main{
     grid-area: main;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 0 10px;/*den ställer in stoppningen för ett element*/
 }
 
 #sida2 aside{
@@ -84,7 +87,7 @@ a:visited, a:active {
 }
 
 a{
-    text-decoration:solid;
+    text-decoration:solid;/*den anger dekorationen som läggs till i texten*/
     color:lightgray;
 }
 
@@ -95,23 +98,28 @@ a:hover{
 
 nav>ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template.rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template.rows: 1fr;
     padding: 0;
     margin: 0;
-    height: 100%;
+    height: 100%;/*den ställer in höjden på ett element*/
     grid-gap: 10px;
-    justify-items: center;
+    justify-items: center;/*den justerar den flexibla behållarens föremål när föremålen inte använder allt tillgängligt utrymme på huvudaxeln*/
 }
-
+ol>li:nth-child(even){/*det låter dig välja ett eller flera element baserat på deras källordning, enligt en formel*/
+    list-style-type:disc;
+}
+ol>li:nth-child(odd){
+    list-style-type:square;
+}
 nav li{
     list-style-type:none;
-    font-size: 1.5em;
+    font-size: 1.5em;/*den ställer in storleken på ett teckensnitt*/
     text-align:center;
-    border: 1px solid brown;
-    border-radius: 10px;
-    margin-right:10px;
-    line-height: 2;
+    border: 1px solid brown;/*den låter dig ange stil, bredd och färg på ett elements kant*/
+    border-radius: 10px;/*den definierar radien för elementets hörn*/
+    margin-right:10px;/*den anger högermarginalen för ett element*/
+    line-height: 2;/*den anger höjden på en linje*/
 }
 
 li:hover{
@@ -121,7 +129,9 @@ li:hover{
 aside{
     grid-area:aside;
 }
-
+#sida1 img{
+    width:20%;
+}
 
 table, th, td{
     border: 1px solid brown;

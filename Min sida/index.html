@@ -1,36 +1,38 @@
 <!DOCTYPE html><!--Information till webbläsaren om vilken dokumenttyp/html man ska använda-->
-<html lang="sv"><!----->
-    <head>
-        <meta charset="utv-8">
-        <title>Index</title>
-        <link href="style.css" rel="stylesheet">
+<html lang="sv"><!--html: (den representerar roten till ett HTML-dokument) lang:(det deklarerar webbsidans språk)-->
+    <head><!--Det definiera dokumentets titel, teckenuppsättning, stilar, skript och annan metainformation-->
+        <meta charset="utv-8"><!--Det bestemar vilka karaktärer och sympoler man kan använda-->
+        <title>Index</title><!--Rubriken av sidan-->
+        <link href="style.css" rel="stylesheet"><!--Det länkar filar t.ex html eller css-->
     </head>
-    <body>
-        <div class="wrapper">
-        <header>
-            <h1> Abdulhakim Adam</h1>
+    <body id="sida1"><!--den innehåller allt innehåll i ett HTML-dokument-->
+        <div class="wrapper"><!--specifies one or more classnames for an element-->
+        <header><!--Den definierar en division eller en sektion i ett HTML-dokument-->
+            <h1> Abdulhakim Adam</h1><!--Rubrik som går från 1 till 6 där 1 är största eller huvudrubrik-->
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Index</a></li>
+        <nav><!--den definierar en uppsättning navigeringslänkar t.ex sida1 eller sida2-->
+            <ul><!--den definierar en oordnad lista eller punktlista-->
+                <li><a href="index.html">Index</a></li><!--li:(den definierar ett listobjekt) a: det definierar ett länk-->
                 <li><a href="sida2.html">Sida 2</a></li>
                 <li><a href="sida3.html">Sida 3</a></li>
                 <li><a href="sida4.html">Sida 4</a></li>
             </ul>
         </nav>
-        <main>
-            <section>
-                <h2>Welcome</h1>
-                <p>Idk how you got here but let me tell you a little bit about my self.</p>
-                <p>My name is Abdi and i'm a student in<a href="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum.html" target="_blank"> Teknikum.</a></p>
-                
+        <main><!--den anger huvudinnehållet eller main i ett dokument-->
+            <section><!--den definierar ett avsnitt i ett dokument-->
+                <h2>Welcome</h2>
+                <p>Idk how you got here but let me tell you a little bit about my self.</p><!--Text-->
+                <p>My name is Abdi and i'm a student in<a href="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum.html" target="_blank"> Teknikum.</a></p><!--_blank: det öppnar ett nytt fönster för länken-->
             </section>
             <section>
-                <h3>My specializations</h2>
+                <h3>My specializations</h3>
                 <p>The program i choose was <a href="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum/program-pa-teknikum/teknikprogrammet.html" target="_blank">"Teknikprogrammet"</a> where i specialized into IT in my second year because i wanted to learn programming.</p>
             </section>
         </main>
-        <footer>
+        <aside>
+            <a href="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum.html" target="_blank"><img src="https://lokaltidningenvaxjo.se/nonsec/media/2021/12/14442-1.jpg"></a>
+        </aside>
+        <footer><!--den definierar en sidfot för ett dokument eller avsnitt-->
             <p>Abdulhakim Adam: Te21B</p>
         </footer>
         </div>
